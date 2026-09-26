@@ -17,8 +17,8 @@ fetch() { # url dest
     fi
 }
 
-fetch https://github.com/nlohmann/json/releases/download/v3.11.3/json.hpp deps/nlohmann/json.hpp
-fetch https://raw.githubusercontent.com/mackron/miniaudio/0.11.21/miniaudio.h deps/miniaudio/miniaudio.h
+fetch https://github.com/nlohmann/json/releases/download/v3.12.0/json.hpp deps/nlohmann/json.hpp
+fetch https://raw.githubusercontent.com/mackron/miniaudio/0.11.25/miniaudio.h deps/miniaudio/miniaudio.h
 fetch https://raw.githubusercontent.com/nothings/stb/master/stb_vorbis.c deps/stb_vorbis/stb_vorbis.c
 
 echo "Dependencies ready in deps/."

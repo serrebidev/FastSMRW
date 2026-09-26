@@ -14,12 +14,12 @@ REM --- single-header libs ---
 if not exist deps\nlohmann\json.hpp (
     echo Fetching nlohmann/json...
     if not exist deps\nlohmann mkdir deps\nlohmann
-    curl -fsSL -o deps\nlohmann\json.hpp https://github.com/nlohmann/json/releases/download/v3.11.3/json.hpp || goto err
+    curl -fsSL -o deps\nlohmann\json.hpp https://github.com/nlohmann/json/releases/download/v3.12.0/json.hpp || goto err
 )
 if not exist deps\miniaudio\miniaudio.h (
     echo Fetching miniaudio...
     if not exist deps\miniaudio mkdir deps\miniaudio
-    curl -fsSL -o deps\miniaudio\miniaudio.h https://raw.githubusercontent.com/mackron/miniaudio/0.11.21/miniaudio.h || goto err
+    curl -fsSL -o deps\miniaudio\miniaudio.h https://raw.githubusercontent.com/mackron/miniaudio/0.11.25/miniaudio.h || goto err
 )
 if not exist deps\stb_vorbis\stb_vorbis.c (
     echo Fetching stb_vorbis...
